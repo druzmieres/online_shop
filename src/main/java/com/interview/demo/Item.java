@@ -91,4 +91,8 @@ public class Item
         }
         return null;
     }
+
+    protected String getComment(String author) {
+        return findCommentByAuthor(author).getText();
+    }
 }
