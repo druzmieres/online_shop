@@ -40,4 +40,47 @@ public class Item
     {
         return price;
     }
+
+    /**
+     * Add a comment to the comment list of this item. Return true if successful, and false otherwise.
+     *
+     * Only one comment per author is allowed. Valid ratings are in the range [1..5].
+     */
+    public boolean addComment(String author, String text, int rating)
+    {
+        if(isInvalidRating(rating)) {  // reject invalid ratings
+            return false;
+        }
+
+        if(findCommentByAuthor(author) != null) {  // reject mutiple comments by same author
+            return false;
+        }
+
+        comments.add(new Comment(author, text, rating));
+        return true;
+    }
+
+    /**
+     * Check whether the given rating is invalid. Return true if it is, false otherwise.
+     * Valid ratings are between 1 and 5.
+     */
+    private boolean isInvalidRating(int rating)
+    {
+        return rating < 1 || rating > 5;
+    }
+
+    /**
+     * Find the comment by the author with the given name.
+     *
+     * @return The comment if it exists; null if it doesn't.
+     */
+    private Comment findCommentByAuthor(String author)
+    {
+        for(Comment comment : comments) {
+            if(comment.getAuthor().equals(author)) {
+                return comment;
+            }
+        }
+        return null;
+    }
 }
