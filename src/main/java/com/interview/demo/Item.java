@@ -42,6 +42,14 @@ public class Item
     }
 
     /**
+     * Return the number of comments for this item.
+     */
+    public int getNumberOfComments()
+    {
+        return comments.size();
+    }
+
+    /**
      * Add a comment to the comment list of this item. Return true if successful, and false otherwise.
      *
      * Only one comment per author is allowed. Valid ratings are in the range [1..5].
