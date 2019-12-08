@@ -53,7 +53,7 @@
           <configuration>
             <archive>
              <manifest>
-              <mainClass>com.interview.demo.App</mainClass>
+              <mainClass>com.interview.demo.Item</mainClass>
              </manifest>
 			</archive>
 		  </configuration>
