@@ -46,7 +46,7 @@ public class ItemTest
         Item item1 = new Item("1982", 10.90);
         assertEquals("1982", item1.getName());
         // the third value (delta) refers to how close the numbers can be and still be considered equal
-        assertEquals(10.99, item1.getPrice(), 0);
+        assertEquals(10.90, item1.getPrice(), 0);
     }
 
     /**
