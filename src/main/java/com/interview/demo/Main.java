@@ -8,7 +8,7 @@ public class Main {
         // Create an item.
         Item headphones = new Item("Bootleg headphones", 0.99);
         // Print the name and price of the item.
-        System.out.printf("The item \"%s\" costs %s.%n", headphones.getName().toLowerCase(), headphones.getPrice());
+        System.out.printf("The item \"%s\" costs $%s.%n", headphones.getName().toLowerCase(), headphones.getPrice());
         // Add customer comment.
         String author = "Catalina Bachmann";
         headphones.addComment(author, "Worst headphones ever >:(", 1);
