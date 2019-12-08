@@ -13,6 +13,6 @@ public class Main {
         String author = "Catalina Bachmann";
         headphones.addComment(author, "Worst headphones ever >:(", 1);
         // Print comment
-        System.out.printf("%s commented \"%s\".%n", author, headphones.getComment(author).toLowerCase());
+        System.out.printf("%s commented \"%s.\"%n", author, headphones.getComment(author).toLowerCase());
     }
 }
