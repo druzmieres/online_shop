@@ -13,7 +13,6 @@ public class Comment
     private String author;
     private String text;
     private int rating;
-    private int votes;
 
     /**
      * Create a comment with all necessary details. The initial vote balance is 0.
@@ -23,7 +22,6 @@ public class Comment
         this.author = author;
         this.text = text;
         this.rating = rating;
-        votes = 0;
     }
 
     /**
