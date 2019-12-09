@@ -26,4 +26,5 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
         }
+    }
 }
