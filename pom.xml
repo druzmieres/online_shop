@@ -15,6 +15,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <sonar.projectKey>com.interview:online_shop</sonar.projectKey>
+    <sonar.organization>danielaruz</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.login>484d5e7f553830ad414991aac9a1bba61a1f64d0</sonar.login>
   </properties>
 
   <dependencies>
