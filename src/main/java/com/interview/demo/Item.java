@@ -80,19 +80,19 @@ public class Item
     /**
      * Find the comment by the author with the given name.
      *
-     * @return The comment if it exists; null if it doesn't.
+     * @return The text of the comment if it exists; null if it doesn't.
      */
-    private Comment findCommentByAuthor(String author)
+    private String findCommentByAuthor(String author)
     {
         for(Comment comment : comments) {
             if(comment.getAuthor().equals(author)) {
-                return comment;
+                return comment.getText();
             }
         }
         return null;
     }
 
     protected String getComment(String author) {
-        return findCommentByAuthor(author).getText();
+        return findCommentByAuthor(author);
     }
 }
