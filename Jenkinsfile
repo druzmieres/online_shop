@@ -11,6 +11,11 @@ pipeline {
                 sh "mvn test"
             }
         }
+        stage('verify sonar') {
+            steps {
+                sh "mvn verify sonar:sonar"
+            }
+        }
         stage('package') {
             steps {
                 sh "mvn package"
